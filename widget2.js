@@ -4,6 +4,7 @@ function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
 r(function(){
   // alert('DOM Ready!')
   console.log('Hey from inside a script tag')
+  console.log(Shopify)
 
   var elem = document.createElement('div');
   elem.setAttribute('id', 'sb_widget')
