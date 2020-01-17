@@ -12,7 +12,7 @@ r(function(){
 
   const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
   const numBalls = 50;
-
+  var balls = [];
   for (let i = 0; i < numBalls; i++) {
     let ball = document.createElement("div");
     ball.classList.add("ball");
