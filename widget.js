@@ -1,14 +1,13 @@
-var elem = document.createElement('div');
-elem.setAttribute('id', 'sb_widget')
-document.body.appendChild(elem)
-
-
 // and here's the trick (works everywhere)
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
 // use like
 r(function(){
   // alert('DOM Ready!')
   console.log('Hey from inside a script tag')
+
+  var elem = document.createElement('div');
+  elem.setAttribute('id', 'sb_widget')
+  document.body.appendChild(elem)
 
   const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
   const numBalls = 50;
@@ -58,6 +57,8 @@ r(function(){
     el.setAttribute('border-radius', '100%')
     el.setAttribute('opacity', '0.7')
   })
+
+  console.log('End of script tag')
 });
 
 
