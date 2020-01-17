@@ -61,7 +61,3 @@ r(function(){
 
   console.log('End of script tag')
 });
-
-
-
-

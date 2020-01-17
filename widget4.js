@@ -53,7 +53,7 @@ r(function(){
 
   var ballDivs = document.getElementsByClassName('ball')
 
-  ballDivs.foEach((el, i ,ra) => {
+  ballDivs.forEach((el, i ,ra) => {
     el.setAttribute('position', 'absolute')
     el.setAttribute('border-radius', '100%')
     el.setAttribute('opacity', '0.7')
