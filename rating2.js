@@ -5,6 +5,13 @@ function main () {
   // Create a bottom right fixed element
   var elem = document.createElement('div');
   elem.setAttribute('id', 'rating_widget');
+  elem.style.position = 'fixed';
+  elem.style.height = '100px';
+  elem.style.width = '500px';
+  elem.style.bottom = 0;
+  elem.style.right = 0;
+  elem.style.background = 'white';
+  elem.style.border = '3px solid #080808';
   document.body.appendChild(elem);
 
   // Load the script tag for
