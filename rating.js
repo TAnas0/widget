@@ -6,7 +6,7 @@ function main () {
   var elem = document.createElement('div');
   elem.setAttribute('id', 'rating_widget');
   document.body.appendChild(elem);
-  
+
   // Load the script tag for
   // var head = document.getElementsByTagName('head')[0]
   var head = document.head || document.getElementsByTagName('head')[0];
@@ -76,4 +76,5 @@ function main () {
   // insert the rating into the fixed element
 }
 
-window.onload = main
+// window.onload = main
+main()
